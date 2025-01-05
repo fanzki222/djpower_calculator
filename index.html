@@ -6,45 +6,56 @@
     <title>DJ Power Calculator</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
-            text-align: center;
-            padding: 20px;
-        }
-        .container {
-            max-width: 500px;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        .result {
-            margin-top: 20px;
-            font-size: 18px;
-            font-weight: bold;
-        }
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+input {
+    width: calc(100% - 20px); /* 确保宽度不超出容器 */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* 使边框和内边距计入宽度 */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
     </style>
 </head>
 <body>
